@@ -1,0 +1,74 @@
+ .head{
+	width:100%;
+	height:70px;
+	background-color:#001c47;
+	color:#fff0ff;
+	text-align:center;
+	padding-top:6px;
+	padding-bottom:5px;
+	font-size:40px;
+	font-family: "Comic sans MS",cursive,sans-serif;
+	margin-bottom:0px;
+	
+}
+h3{
+	margin:0px;
+}
+ul{
+	padding:0px;
+	margin:0px;
+	background-color:yellow;
+	overflow:hidden;
+	list-style-type:none;
+}
+li{
+	float:left;
+  
+}
+a{
+	display:block;
+	padding:20px;
+	text-decoration:none;
+	color:green;
+}
+a:hover{
+	background-color:purple;
+}
+a:active{
+	background-color: blue;
+}
+img.images{
+	width:150px;
+	height:150px;
+	margin-right:5%;
+	margin-left: 6%;  
+	border-radius:75px;
+	border: solid 1px;
+}
+.Introduction{
+	font-size:35px;
+	border-bottom: solid 1px;
+	font-weight: bold;
+}
+.intro-content{
+	font-size:18px;
+}
+.mathtricks-heading{
+	border-bottom: solid 5px;
+}
+img.Note {
+	width:20px;
+}
+body{
+	margin:2%;
+	background-color:#fcfffc;
+	font-size:18px;
+}
+.Note{
+	margin:5%;
+	background-color:#ffc985;
+	border-radius:15px;
+	padding:1%;
+	margin-top:2%;
+	box-shadow: 7px 10px 25px -1px #ffc985;
+}

@@ -1,0 +1,1865 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Home </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="C:\Users\Elcot\Desktop\javag\mathnote.css">
+<meta name="keywords" content="Backpropagation algorithm derivation, shortcut Multiplication for 2 digit number">
+<meta name="description" content="Mathematical findings and explanation">
+<meta name="author" content="Malai Guhan">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body>
+<div class="head">
+<h3>MathNote</h3>
+</div>
+<nav>
+<ul>
+<li title="Home"><a href="#Intro" >Home</a></li>
+<li title="MathTricks"><a href="#MathTricks" >MathTricks</a></li>
+<li title="BackProp"><a href="#BackProp" >BackProp</a></li>
+<li title="Funny Facts"><a href="#0" >Funny Facts</a></li>
+<li title="Author's concern"><a href="#1" >Author's concern</a></li>
+<li title="Contact" ><a href="#">Contact</a></li>
+</ul>
+</nav>
+<br>
+<div >
+<!--<img class="images" src="https://www.shorturl.at/dFSV2" >!-->
+<img class="images" src="https://www.shorturl.at/tAIP2" >
+<img class="images" src="https://www.shorturl.at/lqBR0" >
+<img class="images" src="https://www.shorturl.at/luCDK" >
+<img class="images" src="https://www.shorturl.at/tEW58" >
+</div>
+<p class="Introduction" id="Intro">Introduction</p>
+<p class="intro-content"> MathNote is a website exclusively developed for intrepreting and explaining some of the mathematical concepts. Though
+there are many websites which can explain and cover most of the mathematical concepts in a breif manner, here at MathNote we try to deliver the basics out of it. We are also 
+commited to post unique content in our website such that it is not redundant and in a way much helpful to the learners. 
+The things which you learn here will make you really interested in mathematics and in the related field. The website is still under development and you can expect
+more interesting updates to the site. We also appreciate your valueful feedback. This website also lists 
+some of the funny facts alongside with mathematical basics. </p>
+<h2>Let us learn and become avid with maths ...</h2>
+<br>
+<h1 class="mathtricks-heading" id="MathTricks">MathTricks</h1>
+<div class="Note" >
+<img  src="https://i.ibb.co/gRPq1BB/edit.png" style="width:3%;">
+<span style="font-weight:strong;font-family:Alatsi;font-size:23px;">Note:</span>
+<p style="margin-left:5%;">All the shortcuts defined here applies for only 2-digit multiplication</p>
+</div>
+<p>Let us start with multiplication of two numbers that ends with 5. If the tens(first) digit of both the numbers add up to give an even number then the end result would have 25 as 
+the last two digits and in case if addition gives an odd number then the result would have 75 as the last two digits.Let us define both the cases with an example. 
+Consider two  two digit numbers.</p>
+<!-- <div style="font-weight:strong;display:inline-block;padding-left:50px;float:left;border:solid;margin-left:100px;background-color:#ebf0ff">
+<math display='block'>
+ <mrow>
+  <mn>35</mn><mo>&#x00D7;</mo><mn>45</mn>
+ <mo>=</mo><mn>15</mn><mn style="color:red;">75</mn>
+</mrow>
+</math>
+<math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mn>3</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mn>4</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mover accent='true'>
+     <mrow>
+      <munder accentunder='true'>
+       <mn>7</mn>
+       <mo stretchy='true'>&#xAF;</mo>
+      </munder>
+      </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    
+   </mtd>
+  </mtr>
+ </mtable>
+<math display='block'>
+ <mrow>
+  <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;So&#x00A0;the&#x00A0;last&#x00A0;two&#x00A0;digits&#x00A0;would&#x00A0;end&#x00A0;with&#x00A0;75</mtext><mtext>.</mtext></mrow>
+</div>
+<div style="font-weight:strong;display:inline-block;padding-left:50px;border:solid;margin-left:200px;background-color:#ebf0ff">
+</math>
+<math display='block'>
+ <mrow>
+  <mn>25</mn><mo>&#x00D7;</mo><mn>45</mn> <mo>=</mo><mn>11</mn><mn style="color:red;">25</mn></mrow>
+</math>
+<math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mn>2</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mn>4</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mover accent='true'>
+     <mrow>
+      <munder accentunder='true'>
+       <mn>6</mn>
+       <mo stretchy='true'>&#xAF;</mo>
+      </munder>
+      </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    
+   </mtd>
+  </mtr>
+ </mtable>
+<math display='block'>
+ <mrow>
+  <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;So&#x00A0;the&#x00A0;last&#x00A0;two&#x00A0;digits&#x00A0;would&#x00A0;end&#x00A0;with&#x00A0;25
+  </mtext><mtext>.</mtext></mrow>
+</math>
+</div> -->
+<img src="21.jpg">
+<p></p>
+<p>Here the two digits in the tens(first) position sre 3 and 4. They sum upto make 7. So the last two digits for the answer would be 75. 
+To make it much simple, if the tens(first) digit of both the numbers are either odd or even, then the first two digits of the result would be 25 or else it would be 75. 
+<p>Now let us move on to find the first two digits of the answer. </p>
+<p>This step is a little bit complex but can be done in mind without a pen and paper. Multiply the numbers in the tens(first) position and add the result with  its average.
+ If the average has a decimal point then ignore it. Let us demonstrate it with an example. Let us consider an instance with numbers 25 and 45 </p>
+ <!-- <div style="font-weight:bold;border:solid;padding-left:12%;padding-top:2%;padding-bottom:2%;margin-left:5%;margin-right:8%;background-color:#ffe0c2">
+<math display='inline-block;'>
+ <mtable columnalign='left' style="margin-right:35%;">
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mn>25</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mn>45</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mover accent='true'>
+     <mrow>
+      <munder accentunder='true'>
+       <mrow>
+        <mn style="color:red;">11</mn><mn>25</mn></mrow>
+       <mo stretchy='true'>&#xAF;</mo>
+      </munder>
+      </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>Steps:</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>1)&#x00A0;Multiply&#x00A0;the&#x00A0;first&#x00A0;two&#x00A0;digits</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;2</mtext><mo>&#x00D7;</mo><mtext>4&#x00A0;=&#x00A0;8</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>2)&#x00A0;Calculate&#x00A0;the&#x00A0;average</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Average&#x00A0;=</mtext><mfrac>
+     <mrow>
+      <mn>2</mn><mo>+</mo><mn>4</mn></mrow>
+     <mn>2</mn>
+    </mfrac>
+    <mo>=</mo><mn>3</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mn>3</mn><mo stretchy='false'>)</mo><mtext>&#x00A0;Add&#x00A0;average&#x00A0;with&#x00A0;product</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Result&#x00A0;=&#x00A0;Average&#x00A0;+&#x00A0;product</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Result&#x00A0;=&#x00A0;3&#x00A0;+&#x00A0;8&#x00A0;=&#x00A0;11</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+ </mtable>
+
+
+ <mtable columnalign='left' >
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;3</mtext><mn>5</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;4</mtext><mn>5</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mover accent='true'>
+     <mrow>
+      <munder accentunder='true'>
+       <mrow>
+        <mn style="color:red;">15</mn><mn>75</mn></mrow>
+       <mo stretchy='true'>&#xAF;</mo>
+      </munder>
+      </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>Steps:</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>1)&#x00A0;Multiply&#x00A0;the&#x00A0;first&#x00A0;two&#x00A0;digits</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;3</mtext><mo>&#x00D7;</mo><mtext>4&#x00A0;=&#x00A0;12</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>2)&#x00A0;Calculate&#x00A0;the&#x00A0;average</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Average&#x00A0;=</mtext><mfrac>
+     <mrow>
+      <mn>3</mn><mo>+</mo><mn>4</mn></mrow>
+     <mn>2</mn>
+    </mfrac>
+    <mo>=</mo><mn>3</mn><mtext>&#x00A0;&#x00A0;(Truncate&#x00A0;the&#x00A0;decimal)</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mn>3</mn><mo stretchy='false'>)</mo><mtext>&#x00A0;Add&#x00A0;average&#x00A0;with&#x00A0;&#x00A0;the&#x00A0;product</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Result&#x00A0;=&#x00A0;Average&#x00A0;+&#x00A0;product</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Result&#x00A0;=&#x00A0;3&#x00A0;+&#x00A0;12&#x00A0;=&#x00A0;15</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+ </mtable> 
+</math>
+ </div> -->
+ <img src="3.jpg">
+<p></p>
+ <p>Hurray! Finally we have learnt a simple method for the multiplication of two numbers ending with 5. Let us dive in a little deeper.</p>
+ <section><p>The following section will illustrate a method for multiplication of any two numbers. </p></section>
+ <p>The tens digit of the first number is multiplied with the ones digit of the second and the ones digit of the first number is multiplied with 
+ the tens digit of the second number. Then add their products. Inorder to remember, keep the ones of the sum in the right hand and remaining number in the left hand.
+ then multiply the ones of the first number with the ones of the second number. Then add the ones digit of the product with the number in right hand. If there is a 1 carry add it to 
+ the number in left hand. And then multiply the tens of the first number with the ones of the second number and finally add it to the number in the left hand. This sequence of process 
+ will eventually fetch the output. And this process may be a little tough  but may be much easier when compared to the traditional method of multiplication.</p>
+ <p>We will  verify the above steps with a demonstration. Consider two numbers 45 and 36. In normal multiplication the result would be 1620. </p>
+ <!-- <div style="font-weight:strong;background-color:#faf2fa;border:solid;padding:2%;margin-left:5%;margin-right:5%">
+ <math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mn>36</mn><mo>&#x00D7;</mo><mn>45</mn><mo>=</mo><mn>1620</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>Step&#x00A0;1:</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mn style="color:#ff33cc;">3</mn><mn style="color:#0059b3;">6</mn><mtext>&#x00A0;</mtext><mo>&#x00D7;</mo><mtext>&#x00A0;</mtext><mn style="color:#0059b3;">4</mn><mn style="color:#ff33cc;">5</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;i)&#x00A0;</mtext><mn>6</mn>
+	<mtext>&#x00A0;</mtext><mo>&#x00D7;</mo><mtext>&#x00A0;</mtext><mn>4</mn><mtext>&#x00A0;</mtext><mo>=</mo><mtext>&#x00A0;</mtext><mn>24</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ii)&#x00A0;</mtext><mn>3</mn><mtext>&#x00A0;</mtext><mo>&#x00D7;</mo>
+	<mtext>&#x00A0;</mtext><mn>5</mn><mtext>&#x00A0;</mtext><mo>=</mo><mtext>&#x00A0;</mtext><mn>15</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;iii)&#x00A0;</mtext><mn>24</mn><mtext>&#x00A0;</mtext><mo>+</mo><mtext>&#x00A0;</mtext>
+	<mn>15</mn><mtext>&#x00A0;</mtext><mo>=</mo><mtext>&#x00A0;</mtext><mn style="color:#00ff00;">3</mn><mn style="color:#ff0000;">9</mn><mtext>&#x00A0;&#x00A0;---&#x00A0;</mtext><mfenced close="]" open="[">
+     <mn>1</mn>
+    </mfenced>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>Step&#x00A0;2:</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mn style="color:#ff33cc;">3</mn><mn style="color:#0059b3;">6</mn><mtext>&#x00A0;</mtext><mo>&#x00D7;</mo><mtext>&#x00A0;</mtext><mn style="color:#ff33cc;">4</mn><mn style="color:#0059b3;">5</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;i)&#x00A0;</mtext><mn>6</mn><mtext>&#x00A0;</mtext><mo>&#x00D7;</mo><mtext>&#x00A0;</mtext><mn>5</mn><mtext>&#x00A0;</mtext>
+	<mo>=</mo><mtext>&#x00A0;</mtext><mn style="color:#660066;">30</mn><mtext>&#x00A0;</mtext><mo>;</mo><mtext>&#x00A0;&#x00A0;</mtext><mn>3</mn><mtext>&#x00A0;</mtext><mo>&#x00D7;</mo><mtext>&#x00A0;</mtext><mn>4</mn><mtext>&#x00A0;</mtext><mo>=</mo><mtext>&#x00A0;</mtext><mn style="color:#f59ff2;">12</mn><mtext>&#x00A0;;</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ii)&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mtable equalrows='true' equalcolumns='true'>
+     <mtr>
+      <mtd>
+       <mn style="color:#ff0000;">9</mn>
+      </mtd>
+      <mtd>
+       <mrow></mrow>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn style="color:#660066;">3</mn>
+      </mtd>
+      <mtd>
+       <mn style="color:#660066;">0</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;Carry&#x00A0;&#x00A0;</mtext><mover>
+     <mo>&#x2190;</mo>
+     <mrow></mrow>
+    </mover>
+    <mover accent='true'>
+     <mrow>
+      <munder accentunder='true'>
+       <mrow>
+        <menclose notation='bottom right'>
+         <mn style="color:#02b8ff;">1</mn>
+        </menclose>
+        <mtext>&#x00A0;</mtext><menclose notation='box'>
+         <mrow>
+          <mn>2</mn><mtext>&#x00A0;</mtext><mn>0</mn></mrow>
+        </menclose>
+        <mtext>&#x00A0;</mtext></mrow>
+       <mo stretchy='true'>&#xAF;</mo>
+      </munder>
+      </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    <mover>
+     <mo>&#x2192;</mo>
+     <mrow></mrow>
+    </mover>
+    <mtext>&#x00A0;Last&#x00A0;2&#x00A0;digits&#x00A0;of&#x00A0;result</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;iii)&#x00A0;&#x00A0;</mtext><mn style="color:#00ff00;">3</mn><mtext>&#x00A0;</mtext><mo>+</mo><mtext>&#x00A0;</mtext><mn style="color:#02b8ff;">1</mn><mtext>&#x00A0;</mtext><mo stretchy='false'>(</mo><mi>c</mi><mi>a</mi><mi>r</mi><mi>r</mi><mi>y</mi><mo stretchy='false'>)</mo><mtext>&#x00A0;</mtext><mo>=</mo><mtext>&#x00A0;</mtext><mn>4</mn>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;iv)&#x00A0;&#x00A0;&#x00A0;</mtext><mn style="color:#f59ff2;">12</mn><mtext>&#x00A0;</mtext><mo>+</mo><mtext>&#x00A0;</mtext><mn>4</mn><mtext>&#x00A0;</mtext><mo>=</mo><mtext>&#x00A0;&#x00A0;</mtext><menclose notation='box'>
+     <mrow>
+      <mn>16</mn></mrow>
+    </menclose>
+    <mover>
+     <mo>&#x2192;</mo>
+     <mrow></mrow>
+    </mover>
+    <mtext>&#x00A0;First&#x00A0;2&#x00A0;digits&#x00A0;of&#x00A0;result</mtext><mtext>.&#x00A0;</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;Hence&#x00A0;1620&#x00A0;is&#x00A0;the&#x00A0;answer</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+ </mtable> 
+</math>
+</div> -->
+<img src="4.jpg">
+<p></p>
+<p>Again I suggest that repeated practice could help you master it.</p>
+<p>Next, We will look at a simple method for finding the slope between two points in a quadratic function. The slope is nothing but the sum of the two numbers. 
+Comparision between the  traditional method  and the new method is involved as follows. </p>
+<!-- <div style="background-color:#f7f5c2;font-weight:strong;margin-left:5%;margin-right:5%;padding:2%;border:solid;font-size:17px;">
+<math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mi>f</mi><mo stretchy='false'>(</mo><mi>x</mi><mo stretchy='false'>)</mo><mo>=</mo><msup>
+     <mi>x</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>Slope&#x00A0;between&#x00A0;6&#x00A0;and&#x00A0;3&#x00A0;will&#x00A0;be&#x00A0;as&#x00A0;follows:</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>Slope&#x00A0;=&#x00A0;</mtext><mfrac>
+     <mrow>
+      <mi>f</mi><mo stretchy='false'>(</mo><msub>
+       <mi>x</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>)</mo><mo>&#x2212;</mo><mi>f</mi><mo stretchy='false'>(</mo><msub>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>)</mo></mrow>
+     <mrow>
+      <msub>
+       <mi>x</mi>
+       <mn>1</mn>
+      </msub>
+      <mo>&#x2212;</mo><msub>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msub>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><mfrac>
+     <mrow>
+      <mn>36</mn><mo>&#x2212;</mo><mn>9</mn></mrow>
+     <mrow>
+      <mn>6</mn><mo>&#x2212;</mo><mn>3</mn></mrow>
+    </mfrac>
+    <mo>=</mo><mn>9</mn><mo>&#x2192;</mo><mfenced close="]" open="[">
+     <mn>1</mn>
+    </mfenced>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>Slope</mtext><mo>=</mo><mtext>&#x00A0;</mtext><mn>6</mn><mtext>&#x00A0;</mtext><mo>+</mo><mtext>&#x00A0;</mtext><mn>3</mn><mtext>&#x00A0;</mtext><mo>=</mo><mtext>&#x00A0;</mtext><mn>9</mn><mo>&#x2192;</mo><mfenced close="]" open="[">
+     <mn>2</mn>
+    </mfenced>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+
+</div> -->
+<img src="5.jpg">
+<p></p>
+<p>These are some of the techniques which we have spent hours on cracking our heads to get the shortcuts. Thanks for reading. Looking forward to see you again.</p>
+<br>
+<h2 style="border-bottom:solid 1px;" id="BackProp">Backpropagation Derivation</h2>
+<div class="Note">
+<img src="https://i.ibb.co/gRPq1BB/edit.png" style="width:3%;">
+<span style="font-weight:strong;font-family:Alatsi;font-size:23px;">Note:</span>
+<p style="margin-left:5%;">Learners should have a prior basic understanding about neural networks.</p>
+</div>
+  <p>Backpropagation is a learning algorithm primarily used for the learning of neural networks. Backprop was used for the calculation of gradients for applying it to optimization algorithms. It was successfully implemented by Geoffrey Hinton et.al  on neural networks.
+  The learning of neural networks is an highly iterative process involving the backpropagation of error term and calculation of gradients. We will here demonstrate the derivation of backpropagation of
+single and multi layer neural networks. I have refered many websites but I could not get a clear picture about the Backprop algorithm. Before directing towards the core of backpropagation algorithm let us have
+intution about the correct implementation of BackProp. The effective way of understanding the BackProp algorithm is by implementing it with a computational graph. </p>
+<!-- <div style="background-color:#f2f5c7;font-weight:strong;margin-left:5%;margin-right:5%;padding:2%;border:solid;font-size:17px;">
+<math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mtext>Consider&#x00A0;an&#x00A0;equation:&#x00A0;&#x00A0;s</mtext><mo>=</mo><mi>a</mi><mi>b</mi><mo>+</mo><mi>c</mi>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <menclose notation='box'>
+     <mi>a</mi>
+    </menclose>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mo>&#x2198;</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><menclose notation='box'>
+     <mrow>
+      <mi>u</mi><mo>=</mo><mi>a</mi><mi>b</mi></mrow>
+    </menclose>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mo>&#x2197;</mo><mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mo>&#x2198;</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <menclose notation='box'>
+     <mi>b</mi>
+    </menclose>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><menclose notation='box'>
+     <mrow>
+      <mi>s</mi><mo>=</mo><mi>u</mi><mo>+</mo><mi>c</mi></mrow>
+    </menclose>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mo>&#x2197;</mo><mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><menclose notation='box'>
+     <mi>c</mi>
+    </menclose>
+    
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+
+</div> -->
+<img src="6.jpg">
+<p></p>
+<p>In the above equation s is the output and a,b and c are inputs. The relation between a,b and c are linear. In order to predict the output varible, it is essential to gain the knowledge of 
+how the output variable changes with respect to the input variables. So we have to find how b changes with respect to a,b and c. If we account the changes of a on s, a do not have a direct relationship with respect to
+ s and their relationship is established with a intermediate variable u. So we have to find the variation of s with respect to u and then find the variation of u with respect to a. This method is called the Chain Rule in calculus.
+This is same with the variable b. Since c is directly related with the output s, we can find the variation quite easily. This is in a similar way to the function of BackProp in Neural Nework except the case here we assumed the weights as inputs.
+</p>
+<!-- <div style="background-color:#fffff0;font-weight:strong;margin-left:5%;margin-right:5%;padding:2%;border:solid;font-size:17px;">
+<math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mtext>The&#x00A0;gradients&#x00A0;are&#x00A0;calculated&#x00A0;using&#x00A0;chain&#x00A0;rule&#x00A0;as&#x00A0;follows:</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;</mtext><mfrac>
+     <mrow>
+      <mi>d</mi><mi>s</mi></mrow>
+     <mrow>
+      <mi>d</mi><mi>a</mi></mrow>
+    </mfrac>
+    <mo>=</mo><mfrac>
+     <mrow>
+      <mi>d</mi><mi>s</mi></mrow>
+     <mrow>
+      <mi>d</mi><mi>u</mi></mrow>
+    </mfrac>
+    <mo>&#x22C5;</mo><mfrac>
+     <mrow>
+      <mi>d</mi><mi>u</mi></mrow>
+     <mrow>
+      <mi>d</mi><mi>a</mi></mrow>
+    </mfrac>
+    <mo>=</mo><mn>1</mn><mo>&#x22C5;</mo><mi>b</mi><mo>=</mo><mi>b</mi>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;</mtext><mfrac>
+     <mrow>
+      <mi>d</mi><mi>s</mi></mrow>
+     <mrow>
+      <mi>d</mi><mi>b</mi></mrow>
+    </mfrac>
+    <mo>=</mo><mfrac>
+     <mrow>
+      <mi>d</mi><mi>s</mi></mrow>
+     <mrow>
+      <mi>d</mi><mi>u</mi></mrow>
+    </mfrac>
+    <mo>&#x22C5;</mo><mfrac>
+     <mrow>
+      <mi>d</mi><mi>u</mi></mrow>
+     <mrow>
+      <mi>d</mi><mi>b</mi></mrow>
+    </mfrac>
+    <mo>=</mo><mn>1</mn><mo>&#x22C5;</mo><mi>a</mi><mo>=</mo><mi>a</mi>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;</mtext><mfrac>
+     <mrow>
+      <mi>d</mi><mi>s</mi></mrow>
+     <mrow>
+      <mi>d</mi><mi>c</mi></mrow>
+    </mfrac>
+    <mo>=</mo><mn>1</mn>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+</div> -->
+<img src="7.jpg">
+<p></p>
+<p>
+Consider a three layer neural network with two neurons in each layer. Consider we use sigmoid activation function for all the neurons. We have two 
+inputs and one output. Let us here employ cross entropy loss. The terminologies are defined below.</p>
+<!-- <div style="background-color:#f0f0ff;font-weight:strong;margin-left:5%;margin-right:5%;padding:2%;border:solid;font-size:17px;">
+<math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mtext>X</mtext><mo>=</mo><mfenced close="]" open="[">
+     <mrow>
+      <mtable equalrows='true' equalcolumns='true'>
+       <mtr>
+        <mtd>
+         <mrow>
+          <msub>
+           <mi>x</mi>
+           <mn>1</mn>
+          </msub>
+          </mrow>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mrow>
+          <msub>
+           <mi>x</mi>
+           <mn>2</mn>
+          </msub>
+          </mrow>
+        </mtd>
+       </mtr>
+       
+      </mtable></mrow>
+    </mfenced><mo>&#x2192;</mo><mtext>input&#x00A0;to&#x00A0;the&#x00A0;network</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>w</mi>
+     <mrow>
+      <mi>i</mi><mi>j</mi></mrow>
+    </msub>
+    <mo>&#x2192;</mo><msup>
+     <mtext>&#x00A0;Weight&#x00A0;connecting&#x00A0;j</mtext>
+     <mrow>
+      <mi>t</mi><mi>h</mi></mrow>
+    </msup>
+    <msup>
+     <mtext>&#x00A0;neuron&#x00A0;in&#x00A0;the&#x00A0;current&#x00A0;layer&#x00A0;to&#x00A0;the&#x00A0;i</mtext>
+     <mrow>
+      <mi>t</mi><mi>h</mi></mrow>
+    </msup>
+    <mtext>&#x00A0;neuron&#x00A0;in&#x00A0;the&#x00A0;next&#x00A0;layer&#x00A0;</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <msup>
+     <mtext>&#x00A0;W</mtext>
+     <mrow>
+      <mo stretchy='false'>[</mo><mi>k</mi><mo stretchy='false'>]</mo></mrow>
+    </msup>
+    <mo>=</mo><mfenced close="]" open="[">
+     <mrow>
+      <mtable equalrows='true' equalcolumns='true'>
+       <mtr>
+        <mtd>
+         <mrow>
+          <msub>
+           <mi>w</mi>
+           <mrow>
+            <mn>11</mn></mrow>
+          </msub>
+          </mrow>
+        </mtd>
+        <mtd>
+         <mrow>
+          <msub>
+           <mi>w</mi>
+           <mrow>
+            <mn>12</mn></mrow>
+          </msub>
+          </mrow>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mrow>
+          <msub>
+           <mi>w</mi>
+           <mrow>
+            <mn>21</mn></mrow>
+          </msub>
+          </mrow>
+        </mtd>
+        <mtd>
+         <mrow>
+          <msub>
+           <mi>w</mi>
+           <mrow>
+            <mn>22</mn></mrow>
+          </msub>
+          </mrow>
+        </mtd>
+       </mtr>
+       
+      </mtable></mrow>
+    </mfenced><mo>&#x2192;</mo><msup>
+     <mtext>&#x00A0;Weight&#x00A0;matrix&#x00A0;in&#x00A0;k</mtext>
+     <mrow>
+      <mi>t</mi><mi>h</mi></mrow>
+    </msup>
+    <mtext>&#x00A0;layer</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <msup>
+     <mtext>A</mtext>
+     <mrow>
+      <mo stretchy='false'>[</mo><mi>k</mi><mo stretchy='false'>]</mo></mrow>
+    </msup>
+    <mtext>&#x00A0;=&#x00A0;</mtext><mfenced close="]" open="[">
+     <mrow>
+      <mtable equalrows='true' equalcolumns='true'>
+       <mtr>
+        <mtd>
+         <mrow>
+          <msub>
+           <mi>a</mi>
+           <mn>1</mn>
+          </msub>
+          </mrow>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mrow>
+          <msub>
+           <mi>a</mi>
+           <mn>2</mn>
+          </msub>
+          </mrow>
+        </mtd>
+       </mtr>
+       
+      </mtable></mrow>
+    </mfenced><mo>&#x2192;</mo><msup>
+     <mtext>&#x00A0;Activations&#x00A0;in&#x00A0;the&#x00A0;k</mtext>
+     <mrow>
+      <mi>t</mi><mi>h</mi></mrow>
+    </msup>
+    <mtext>&#x00A0;layer</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;</mtext>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+</div> -->
+<img src="8.jpg">
+<p></p>
+<div class="Note" >
+<img  src="https://i.ibb.co/gRPq1BB/edit.png" style="width:3%;">
+<span style="font-weight:strong;font-family:Alatsi;font-size:23px;">Note:</span>
+<p style="margin-left:5%;"> Input layer is considered as the 0<sup>th</sup> layer as it does not perform any computation.</p>
+</div>
+<img src="https://i.ibb.co/28cZRvQ/nn.jpg" style="margin-left:14%;">
+<p>As we told earlier we have to find the gradients for every weight vector, but we will here illustrate only one of the gradiemts. This  idea can be expanded to any such gradients.
+</p>
+<!-- <div style="background-color:#f2f2bf;font-weight:strong;margin-left:5%;margin-right:5%;padding:2%;border:solid;font-size:17px;">
+<math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mtext>We&#x00A0;here&#x00A0;find&#x00A0;the&#x00A0;gradient&#x00A0;of&#x00A0;the&#x00A0;weight&#x00A0;</mtext><msub>
+     <mi>w</mi>
+     <mrow>
+      <mn>11</mn></mrow>
+    </msub>
+    <mo>.</mo><mtext>&#x00A0;We&#x00A0;will&#x00A0;illustrate&#x00A0;this&#x00A0;with&#x00A0;the&#x00A0;following&#x00A0;steps:</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;i)&#x00A0;When&#x00A0;</mtext><msub>
+     <mi>w</mi>
+     <mrow>
+      <mn>11</mn></mrow>
+    </msub>
+    <mtext>&#x00A0;changes,&#x00A0;</mtext><msubsup>
+     <mi>a</mi>
+     <mn>1</mn>
+     <mrow>
+      <mfenced close="]" open="[">
+       <mn>1</mn>
+      </mfenced></mrow>
+    </msubsup>
+    <mtext>&#x00A0;changes&#x00A0;and&#x00A0;this&#x00A0;further&#x00A0;changes&#x00A0;output&#x00A0;of&#x00A0;the&#x00A0;rest&#x00A0;of&#x00A0;the&#x00A0;network&#x00A0;and&#x00A0;hence&#x00A0;the&#x00A0;error</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Cross&#x00A0;Entropy&#x00A0;Loss&#x00A0;(E)</mtext><mo>=</mo><mo>&#x2212;</mo><mfenced close="]" open="[">
+     <mrow>
+      <mi>y</mi><mo>&#x22C5;</mo><mi>log</mi><mo stretchy='false'>(</mo><mover>
+       <mi>y</mi>
+       <mi>&#x039B;</mi>
+      </mover>
+      <mo stretchy='false'>)</mo><mo>+</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mi>y</mi><mo stretchy='false'>)</mo><mo>&#x22C5;</mo><mi>log</mi><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mover>
+       <mi>y</mi>
+       <mi>&#x039B;</mi>
+      </mover>
+      <mo stretchy='false'>)</mo></mrow>
+    </mfenced>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;The&#x00A0;derivation&#x00A0;of&#x00A0;loss&#x00A0;with&#x00A0;respect&#x00A0;to&#x00A0;output&#x00A0;&#x00A0;</mtext><mover>
+     <mi>y</mi>
+     <mi>&#x039B;</mi>
+    </mover>
+    <mtext>&#x00A0;is&#x00A0;given&#x00A0;by,</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mfrac>
+     <mrow>
+      <mi>d</mi><mi>E</mi></mrow>
+     <mrow>
+      <mi>d</mi><mover>
+       <mi>y</mi>
+       <mi>&#x039B;</mi>
+      </mover>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><mfrac>
+     <mrow>
+      <mi>d</mi><mi>E</mi></mrow>
+     <mrow>
+      <mi>d</mi><msup>
+       <mi>a</mi>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><mo>&#x2212;</mo><mfenced close="]" open="[">
+     <mrow>
+      <mfrac>
+       <mi>y</mi>
+       <mrow>
+        <mover>
+         <mi>y</mi>
+         <mi>&#x039B;</mi>
+        </mover>
+        </mrow>
+      </mfrac>
+      <mo>&#x2212;</mo><mfrac>
+       <mrow>
+        <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mi>y</mi><mo stretchy='false'>)</mo></mrow>
+       <mrow>
+        <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mover>
+         <mi>y</mi>
+         <mi>&#x039B;</mi>
+        </mover>
+        <mo stretchy='false'>)</mo></mrow>
+      </mfrac>
+      </mrow>
+    </mfenced><mo>=</mo><mo>&#x2212;</mo><mfrac>
+     <mi>y</mi>
+     <mrow>
+      <mover>
+       <mi>y</mi>
+       <mi>&#x039B;</mi>
+      </mover>
+      </mrow>
+    </mfrac>
+    <mo>+</mo><mfrac>
+     <mrow>
+      <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mi>y</mi><mo stretchy='false'>)</mo></mrow>
+     <mrow>
+      <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mover>
+       <mi>y</mi>
+       <mi>&#x039B;</mi>
+      </mover>
+      <mo stretchy='false'>)</mo></mrow>
+    </mfrac>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ii)&#x00A0;&#x00A0;</mtext><mover>
+     <mi>y</mi>
+     <mi>&#x039B;</mi>
+    </mover>
+    <mo>=</mo><mi>&#x03C3;</mi><mo stretchy='false'>(</mo><msub>
+     <mi>a</mi>
+     <mn>1</mn>
+    </msub>
+    <msub>
+     <mi>w</mi>
+     <mn>1</mn>
+    </msub>
+    <mo>+</mo><msub>
+     <mi>a</mi>
+     <mn>2</mn>
+    </msub>
+    <msub>
+     <mi>w</mi>
+     <mn>2</mn>
+    </msub>
+    <mo stretchy='false'>)</mo><mo>=</mo><mi>&#x03C3;</mi><mo stretchy='false'>(</mo><msup>
+     <mi>Z</mi>
+     <mrow>
+      <mfenced close="]" open="[">
+       <mn>3</mn>
+      </mfenced></mrow>
+    </msup>
+    <mo stretchy='false'>)</mo><mo>=</mo><msup>
+     <mi>a</mi>
+     <mrow>
+      <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+    </msup>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>The&#x00A0;derivation&#x00A0;of&#x00A0;sigmoid&#x00A0;function&#x00A0;is&#x00A0;illustrated&#x00A0;below</mtext><mtext>.</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;iii)&#x00A0;&#x00A0;</mtext><mi>&#x03C3;</mi><mo stretchy='false'>(</mo><mi>x</mi><mo stretchy='false'>)</mo><mo>=</mo><mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mn>1</mn><mo>+</mo><msup>
+       <mi>e</mi>
+       <mrow>
+        <mo>&#x2212;</mo><mi>x</mi></mrow>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><msup>
+     <mfenced>
+      <mrow>
+       <mn>1</mn><mo>+</mo><msup>
+        <mi>e</mi>
+        <mrow>
+         <mo>&#x2212;</mo><mi>x</mi></mrow>
+       </msup>
+       </mrow>
+     </mfenced>
+     <mrow>
+      <mo>&#x2212;</mo><mn>1</mn></mrow>
+    </msup>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;iv)&#x00A0;&#x00A0;</mtext><mfrac>
+     <mrow>
+      <mi>d</mi><mi>&#x03C3;</mi><mo stretchy='false'>(</mo><mi>x</mi><mo stretchy='false'>)</mo></mrow>
+     <mrow>
+      <mi>d</mi><mi>x</mi></mrow>
+    </mfrac>
+    <mo>=</mo><mo>&#x2212;</mo><msup>
+     <mfenced>
+      <mrow>
+       <mn>1</mn><mo>+</mo><msup>
+        <mi>e</mi>
+        <mrow>
+         <mo>&#x2212;</mo><mi>x</mi></mrow>
+       </msup>
+       </mrow>
+     </mfenced>
+     <mrow>
+      <mo>&#x2212;</mo><mn>2</mn></mrow>
+    </msup>
+    <mo>&#x22C5;</mo><mo>&#x2212;</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mo>&#x2212;</mo><mi>x</mi></mrow>
+    </msup>
+    <mo>=</mo><mfrac>
+     <mrow>
+      <msup>
+       <mi>e</mi>
+       <mrow>
+        <mo>&#x2212;</mo><mi>x</mi></mrow>
+      </msup>
+      </mrow>
+     <mrow>
+      <msup>
+       <mrow>
+        <mfenced>
+         <mrow>
+          <mn>1</mn><mo>+</mo><msup>
+           <mi>e</mi>
+           <mrow>
+            <mo>&#x2212;</mo><mi>x</mi></mrow>
+          </msup>
+          </mrow>
+        </mfenced></mrow>
+       <mn>2</mn>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mn>1</mn><mo>+</mo><msup>
+       <mi>e</mi>
+       <mrow>
+        <mo>&#x2212;</mo><mi>x</mi></mrow>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mfenced>
+     <mrow>
+      <mfrac>
+       <mrow>
+        <msup>
+         <mi>e</mi>
+         <mrow>
+          <mo>&#x2212;</mo><mi>x</mi></mrow>
+        </msup>
+        </mrow>
+       <mrow>
+        <mn>1</mn><mo>+</mo><msup>
+         <mi>e</mi>
+         <mrow>
+          <mo>&#x2212;</mo><mi>x</mi></mrow>
+        </msup>
+        </mrow>
+      </mfrac>
+      </mrow>
+    </mfenced><mo>=</mo><mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mn>1</mn><mo>+</mo><msup>
+       <mi>e</mi>
+       <mrow>
+        <mo>&#x2212;</mo><mi>x</mi></mrow>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mfenced>
+     <mrow>
+      <mn>1</mn><mo>&#x2212;</mo><mfrac>
+       <mn>1</mn>
+       <mrow>
+        <mn>1</mn><mo>+</mo><msup>
+         <mi>e</mi>
+         <mrow>
+          <mo>&#x2212;</mo><mi>x</mi></mrow>
+        </msup>
+        </mrow>
+      </mfrac>
+      </mrow>
+    </mfenced><mo>=</mo><mi>&#x03C3;</mi><mo stretchy='false'>(</mo><mi>x</mi><mo stretchy='false'>)</mo><mfenced>
+     <mrow>
+      <mn>1</mn><mo>&#x2212;</mo><mi>&#x03C3;</mi><mo stretchy='false'>(</mo><mi>x</mi><mo stretchy='false'>)</mo></mrow>
+    </mfenced><mo>&#x2192;</mo><mfenced>
+     <mn>1</mn>
+    </mfenced>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>From&#x00A0;</mtext><mfenced>
+     <mn>1</mn>
+    </mfenced><mo>,</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</mtext><mfrac>
+     <mrow>
+      <mi>d</mi><msup>
+       <mi>a</mi>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msup>
+      </mrow>
+     <mrow>
+      <mi>d</mi><msup>
+       <mi>Z</mi>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><msup>
+     <mi>a</mi>
+     <mrow>
+      <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+    </msup>
+    <mfenced>
+     <mrow>
+      <mn>1</mn><mo>&#x2212;</mo><msup>
+       <mi>a</mi>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msup>
+      </mrow>
+    </mfenced><mo>.</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    </mtable>
+	</math>
+	</div> -->
+	<img src="9.jpg">
+<p></p>
+	<!-- <div style="background-color:#fff7fc;font-weight:strong;margin:5%;padding:2%;border:solid;font-size:22px;">
+   <math display='block'>
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mtext>The&#x00A0;gradient&#x00A0;is&#x00A0;derived&#x00A0;using&#x00A0;chain&#x00A0;rule&#x00A0;as&#x00A0;follows,</mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>E</mi></mrow>
+     <mrow>
+      <mi>d</mi><msub>
+       <mi>w</mi>
+       <mrow>
+        <mn>11</mn></mrow>
+      </msub>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><mfenced close="]" open="[">
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><mi>E</mi></mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>a</mi>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+        </msup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>a</mi>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+        </msup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>Z</mi>
+         <mrow>
+          <mfenced close="]" open="[">
+           <mn>3</mn>
+          </mfenced></mrow>
+        </msup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>Z</mi>
+         <mrow>
+          <mfenced close="]" open="[">
+           <mn>3</mn>
+          </mfenced></mrow>
+        </msup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msub>
+         <mi>w</mi>
+         <mrow>
+          <mn>11</mn></mrow>
+        </msub>
+        </mrow>
+      </mfrac>
+      </mrow>
+    </mfenced><mo>+</mo><mfenced close="]" open="[">
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><mi>E</mi></mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>a</mi>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+        </msup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>a</mi>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+        </msup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>Z</mi>
+         <mrow>
+          <mfenced close="]" open="[">
+           <mn>3</mn>
+          </mfenced></mrow>
+        </msup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>Z</mi>
+         <mrow>
+          <mfenced close="]" open="[">
+           <mn>3</mn>
+          </mfenced></mrow>
+        </msup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>2</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>2</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>2</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>2</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msub>
+         <mi>w</mi>
+         <mrow>
+          <mn>11</mn></mrow>
+        </msub>
+        </mrow>
+      </mfrac>
+      </mrow>
+    </mfenced>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>E</mi></mrow>
+     <mrow>
+      <mi>d</mi><msub>
+       <mi>w</mi>
+       <mrow>
+        <mn>11</mn></mrow>
+      </msub>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><mfrac>
+     <mrow>
+      <mo>&#x2202;</mo><mi>E</mi></mrow>
+     <mrow>
+      <mo>&#x2202;</mo><msup>
+       <mi>a</mi>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mo>&#x22C5;</mo><mfrac>
+     <mrow>
+      <mo>&#x2202;</mo><msup>
+       <mi>a</mi>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msup>
+      </mrow>
+     <mrow>
+      <mo>&#x2202;</mo><msup>
+       <mi>Z</mi>
+       <mrow>
+        <mfenced close="]" open="[">
+         <mn>3</mn>
+        </mfenced></mrow>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mfenced close="]" open="[">
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>Z</mi>
+         <mrow>
+          <mfenced close="]" open="[">
+           <mn>3</mn>
+          </mfenced></mrow>
+        </msup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>+</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msup>
+         <mi>Z</mi>
+         <mrow>
+          <mfenced close="]" open="[">
+           <mn>3</mn>
+          </mfenced></mrow>
+        </msup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>2</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>2</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>2</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      <mo>&#x22C5;</mo><mfrac>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>Z</mi>
+         <mn>2</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+       <mrow>
+        <mo>&#x2202;</mo><msubsup>
+         <mi>a</mi>
+         <mn>1</mn>
+         <mrow>
+          <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+        </msubsup>
+        </mrow>
+      </mfrac>
+      </mrow>
+    </mfenced><mo>&#x22C5;</mo><mfrac>
+     <mrow>
+      <mo>&#x2202;</mo><msubsup>
+       <mi>a</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      </mrow>
+     <mrow>
+      <mo>&#x2202;</mo><msubsup>
+       <mi>Z</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      </mrow>
+    </mfrac>
+    <mo>&#x22C5;</mo><mfrac>
+     <mrow>
+      <mo>&#x2202;</mo><msubsup>
+       <mi>Z</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>1</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      </mrow>
+     <mrow>
+      <mo>&#x2202;</mo><msub>
+       <mi>w</mi>
+       <mrow>
+        <mn>11</mn></mrow>
+      </msub>
+      </mrow>
+    </mfrac>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>E</mi></mrow>
+     <mrow>
+      <mi>d</mi><msub>
+       <mi>w</mi>
+       <mrow>
+        <mn>11</mn></mrow>
+      </msub>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><mfenced>
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mo>&#x2212;</mo><mi>y</mi></mrow>
+       <mrow>
+        <mover>
+         <mi>y</mi>
+         <mi>&#x039B;</mi>
+        </mover>
+        </mrow>
+      </mfrac>
+      <mo>+</mo><mfrac>
+       <mrow>
+        <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mi>y</mi><mo stretchy='false'>)</mo></mrow>
+       <mrow>
+        <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mover>
+         <mi>y</mi>
+         <mi>&#x039B;</mi>
+        </mover>
+        <mo stretchy='false'>)</mo></mrow>
+      </mfrac>
+      </mrow>
+    </mfenced><mo>&#x22C5;</mo><mover>
+     <mi>y</mi>
+     <mi>&#x039B;</mi>
+    </mover>
+    <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mover>
+     <mi>y</mi>
+     <mi>&#x039B;</mi>
+    </mover>
+    <mo stretchy='false'>)</mo><mfenced close="]" open="[">
+     <mrow>
+      <msubsup>
+       <mi>w</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo>&#x22C5;</mo><msubsup>
+       <mi>a</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msubsup>
+       <mi>a</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo stretchy='false'>)</mo><mo>&#x22C5;</mo><msubsup>
+       <mi>w</mi>
+       <mrow>
+        <mn>11</mn></mrow>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo>+</mo><msubsup>
+       <mi>w</mi>
+       <mn>2</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo>&#x22C5;</mo><msubsup>
+       <mi>a</mi>
+       <mn>2</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msubsup>
+       <mi>a</mi>
+       <mn>2</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo stretchy='false'>)</mo><mo>&#x22C5;</mo><msubsup>
+       <mi>w</mi>
+       <mrow>
+        <mn>21</mn></mrow>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      </mrow>
+    </mfenced><mo>&#x22C5;</mo><msubsup>
+     <mi>a</mi>
+     <mn>2</mn>
+     <mrow>
+      <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+    </msubsup>
+    <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msubsup>
+     <mi>a</mi>
+     <mn>2</mn>
+     <mrow>
+      <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+    </msubsup>
+    <mo stretchy='false'>)</mo><mo>&#x22C5;</mo><msub>
+     <mi>x</mi>
+     <mn>1</mn>
+    </msub>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>E</mi></mrow>
+     <mrow>
+      <mi>d</mi><msub>
+       <mi>w</mi>
+       <mrow>
+        <mn>11</mn></mrow>
+      </msub>
+      </mrow>
+    </mfrac>
+    <mo>=</mo><mfenced>
+     <mrow>
+      <mover>
+       <mi>y</mi>
+       <mi>&#x039B;</mi>
+      </mover>
+      <mo>&#x2212;</mo><mi>y</mi></mrow>
+    </mfenced><mo>&#x22C5;</mo><mfenced close="]" open="[">
+     <mrow>
+      <msubsup>
+       <mi>w</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo>&#x22C5;</mo><msubsup>
+       <mi>a</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msubsup>
+       <mi>a</mi>
+       <mn>1</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo stretchy='false'>)</mo><mo>&#x22C5;</mo><msubsup>
+       <mi>w</mi>
+       <mrow>
+        <mn>11</mn></mrow>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo>+</mo><msubsup>
+       <mi>w</mi>
+       <mn>2</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>3</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo>&#x22C5;</mo><msubsup>
+       <mi>a</mi>
+       <mn>2</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msubsup>
+       <mi>a</mi>
+       <mn>2</mn>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      <mo stretchy='false'>)</mo><mo>&#x22C5;</mo><msubsup>
+       <mi>w</mi>
+       <mrow>
+        <mn>21</mn></mrow>
+       <mrow>
+        <mo stretchy='false'>[</mo><mn>2</mn><mo stretchy='false'>]</mo></mrow>
+      </msubsup>
+      </mrow>
+    </mfenced>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+
+</div> -->
+<img src="10.jpg">
+<p></p>
+<p>Thus the calculated gradient can be used in Gradient Descent for updation of weight w<sub>11</sub>. The other such gradients are also calculated using the similar methods. But today there are many libraries available to perform
+the gradient calculation using a technique called automatic differentiation, which employs chain rule repeatedly for calculation of gradients thus avoid writing hardcoded formulas.</p>
+
+</body>
+</html>
+
